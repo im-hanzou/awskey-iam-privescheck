@@ -51,11 +51,11 @@ check_ec2_permission() {
 }
 
 main_menu() {
-    echo -e "\n=== ${YELLOW}AWS CREDENTIALS - EC2 Permission Check${RESET} ==="
-    echo -e "1. ${GREEN}Use AWS Credentials from aws configure${RESET}"
+    echo -e "\n=== ${YELLOW}AWS CREDENTIALS - Privilege Escalation Checker${RESET} ==="
+    echo -e "1. ${GREEN}Set AWS Credentials${RESET}"
     echo -e "2. ${GREEN}Check EC2 Permission${RESET}"
-    echo -e "3. ${GREEN}List Roles for EC2 Instances${RESET}"
-    echo -e "4. ${GREEN}List Attached Policies${RESET}"
+    echo -e "3. ${GREEN}Check List Roles for EC2 Instances${RESET}"
+    echo -e "4. ${GREEN}Check List Attached Policies in Roles${RESET}"
     echo -e "5. ${RED}Exit${RESET}"
 
     read -rp "Enter your choice: " choice

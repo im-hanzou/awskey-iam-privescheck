@@ -31,7 +31,7 @@ list_roles_for_ec2() {
 }
 
 list_attached_policies() {
-    read -p "Insert role: " selected_role
+    read -p "Insert role name: " selected_role
     attached_policies=$(aws iam list-attached-role-policies --role-name "$selected_role")
 
     if [[ -n "$attached_policies" ]]; then

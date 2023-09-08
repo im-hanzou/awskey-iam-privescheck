@@ -10,9 +10,9 @@ set_session_token() {
         export AWS_ACCESS_KEY_ID="$access_key_id"
         export AWS_SECRET_ACCESS_KEY="$secret_access_key"
         export AWS_SESSION_TOKEN="$session_token"
-        echo "\nSession token has been set.\n"
+        echo -e "\nSession token has been set.\n"
     else
-        echo "\nMissing input. Session token was not set.\n"
+        echo -e "\nMissing input. Session token was not set.\n"
     fi
 }
 
@@ -58,7 +58,7 @@ unset_session_token() {
     unset AWS_SESSION_TOKEN
     unset AWS_SECRET_ACCESS_KEY
     unset AWS_ACCESS_KEY_ID
-    echo "\nSession token has been unset.\n"
+    echo -e "\nSession token has been unset.\n"
 }
 
 main_menu() {

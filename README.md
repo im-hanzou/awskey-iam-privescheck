@@ -12,7 +12,7 @@
 <p>Before using this script, make sure you have the following prerequisites installed:</p>
 <ul>
 <li><a href="https://aws.amazon.com/cli/">AWS CLI </a>: Ensure you have the AWS Command Line Interface installed and configured with your AWS credentials.</li>
-<li><a href="https://stedolan.github.io/jq/">jq </a>: This script utilizes <code>jq</code> to parse JSON output from AWS CLI commands. Please install it before running the script.</li>
+<li><a href="https://stedolan.github.io/jq/">jq </a>: This script utilizes <code>jq</code> to parse JSON output from AWS CLI commands. Please install it before running the script. Install jq on gitbash <code>curl -L -o /usr/bin/jq.exe https://github.com/stedolan/jq/releases/latest/download/jq-win64.exe</code></li>
 </ul>
 
 <h2>Usage</h2>
